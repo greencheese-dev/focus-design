@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/focus-design/static/css/main.d3749c92.css",
-    "main.js": "/focus-design/static/js/main.f78f207a.js",
+    "main.css": "/focus-design/static/css/main.e113803d.css",
+    "main.js": "/focus-design/static/js/main.7e166a91.js",
+    "static/media/right_1.jpeg": "/focus-design/static/media/right_1.8444e73d64ca1ffa84a6.jpeg",
     "static/media/text_instagram.svg": "/focus-design/static/media/text_instagram.18404d71fccdf14ae933b3b16b2f9d3b.svg",
     "static/media/test_youtube.svg": "/focus-design/static/media/test_youtube.c5ec3c9f6997477317f243bb8d105fdf.svg",
     "static/media/test_naver.svg": "/focus-design/static/media/test_naver.c85f700a8e9f52ab8249270f82c36155.svg",
     "index.html": "/focus-design/index.html",
     "static/media/logo.svg": "/focus-design/static/media/logo.72707bd1319b07b46f208496f0756e9d.svg",
-    "main.d3749c92.css.map": "/focus-design/static/css/main.d3749c92.css.map",
-    "main.f78f207a.js.map": "/focus-design/static/js/main.f78f207a.js.map"
+    "main.e113803d.css.map": "/focus-design/static/css/main.e113803d.css.map",
+    "main.7e166a91.js.map": "/focus-design/static/js/main.7e166a91.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3749c92.css",
-    "static/js/main.f78f207a.js"
+    "static/css/main.e113803d.css",
+    "static/js/main.7e166a91.js"
   ]
 }
