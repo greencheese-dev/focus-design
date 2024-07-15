@@ -1,26 +1,28 @@
 {
   "files": {
     "main.css": "/focus-design/static/css/main.e113803d.css",
-    "main.js": "/focus-design/static/js/main.4aa719d4.js",
-    "static/media/right_1.jpeg": "/focus-design/static/media/right_1.8444e73d64ca1ffa84a6.jpeg",
-    "static/media/left_3.jpeg": "/focus-design/static/media/left_3.45b1252591d01468d43a.jpeg",
-    "static/media/center_1.jpeg": "/focus-design/static/media/center_1.37c641b1f5131d6c26ea.jpeg",
-    "static/media/left_4.jpeg": "/focus-design/static/media/left_4.2fe5383657faaa050336.jpeg",
-    "static/media/left_1.jpeg": "/focus-design/static/media/left_1.0916c35635effc3cd1e6.jpeg",
-    "static/media/left_2.jpeg": "/focus-design/static/media/left_2.0b7c9aad3cd5f426a3a8.jpeg",
-    "static/media/right_2.jpeg": "/focus-design/static/media/right_2.56908d30e66a29cb6aaf.jpeg",
-    "static/media/center_2.jpeg": "/focus-design/static/media/center_2.9b3c9c911a8b764debaf.jpeg",
-    "static/media/right_3.jpeg": "/focus-design/static/media/right_3.df55f3c11923081b4ab1.jpeg",
+    "main.js": "/focus-design/static/js/main.7c5bbdf1.js",
+    "static/media/right_2.jpeg": "/focus-design/static/media/right_2.6a552f4bb2ffeecb03f2.jpeg",
+    "static/media/center_1.jpeg": "/focus-design/static/media/center_1.52a03be8a64cd6c30342.jpeg",
+    "static/media/right_1.jpeg": "/focus-design/static/media/right_1.84584f2d09c73b3f6692.jpeg",
+    "static/media/left_4.jpeg": "/focus-design/static/media/left_4.00f0820fafd45d68cff8.jpeg",
+    "static/media/left_1.jpeg": "/focus-design/static/media/left_1.ca3ff1c3595efd22eda6.jpeg",
+    "static/media/left_3.jpeg": "/focus-design/static/media/left_3.4df1e815fe7e0df578d0.jpeg",
+    "static/media/center_2.jpeg": "/focus-design/static/media/center_2.da5200ad5561189e7edd.jpeg",
+    "static/media/left_2.jpeg": "/focus-design/static/media/left_2.e5427206c1979cc5d9f5.jpeg",
+    "static/media/right_3.jpeg": "/focus-design/static/media/right_3.e8155d3cb4a4be26f274.jpeg",
     "static/media/text_instagram.svg": "/focus-design/static/media/text_instagram.18404d71fccdf14ae933b3b16b2f9d3b.svg",
     "static/media/test_youtube.svg": "/focus-design/static/media/test_youtube.c5ec3c9f6997477317f243bb8d105fdf.svg",
+    "static/media/left_5.jpeg": "/focus-design/static/media/left_5.55b03b1384d8a029dd03.jpeg",
     "static/media/test_naver.svg": "/focus-design/static/media/test_naver.c85f700a8e9f52ab8249270f82c36155.svg",
+    "static/media/left_6.jpeg": "/focus-design/static/media/left_6.f159f16eb220e7434c90.jpeg",
     "index.html": "/focus-design/index.html",
     "static/media/logo.svg": "/focus-design/static/media/logo.72707bd1319b07b46f208496f0756e9d.svg",
     "main.e113803d.css.map": "/focus-design/static/css/main.e113803d.css.map",
-    "main.4aa719d4.js.map": "/focus-design/static/js/main.4aa719d4.js.map"
+    "main.7c5bbdf1.js.map": "/focus-design/static/js/main.7c5bbdf1.js.map"
   },
   "entrypoints": [
     "static/css/main.e113803d.css",
-    "static/js/main.4aa719d4.js"
+    "static/js/main.7c5bbdf1.js"
   ]
 }
