@@ -1,0 +1,58 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .loader {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.container .loader span {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 30px;
+  height: 30px;
+  background: rgb(255, 155, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: block;
+  border-radius: 50%;
+  animation: anim2 ease-in-out 2s infinite;
+}
+.container .loader span:nth-child(2) {
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  animation-delay: -1s;
+  animation: anim ease-in-out 2s infinite;
+}
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateX(-150px);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+}
+@keyframes anim2 {
+  0%,
+  100% {
+    transform: translateX(-40px);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+}

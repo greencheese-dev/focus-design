@@ -1,0 +1,33 @@
+.nav_title p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.wrapper {
+  position: fixed;
+  z-index: 3;
+}
+.nav_ul {
+}
+.nav_li,
+.nav_title,
+.nav_contents {
+  transition: all cubic-bezier(0.36, 0, 0.22, 1.17) 0.3s;
+}
+
+.nav_title {
+  cursor: pointer;
+}
+
+.nav_li:hover > div {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.nav_title:hover + .nav_contents,
+.nav_contents:hover {
+  visibility: visible;
+  height: calc(100vh - 1.2rem - 41px);
+  opacity: 1;
+}

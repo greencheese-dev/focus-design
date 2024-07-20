@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfocus_design=self.webpackChunkfocus_design||[]).push([[711],{711:(e,c,s)=>{s.r(c),s.d(c,{default:()=>t});s(655);const r="Project_wrapper__OpFHK",a="Project_header__BsxAw";var o=s(579);const t=()=>(0,o.jsx)("div",{className:"flex flex-col ".concat(r),children:(0,o.jsx)("h1",{className:"mt-16 border-t border-black ".concat(a),children:"Project"})})}}]);
+//# sourceMappingURL=711.d5570aec.chunk.js.map

@@ -1,0 +1,29 @@
+.item > span:first-child {
+  display: block;
+}
+.item > span:not(:first-child) {
+  display: none;
+}
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.item:hover > span:first-child {
+  display: none;
+}
+.item:hover > span:not(:first-child) {
+  display: block;
+  animation: ticker 2s linear infinite; /* 애니메이션 설정 */
+}
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  } /* 시작 위치: 왼쪽 끝 */
+  to {
+    transform: translateX(-100%);
+  } /* 종료 위치: 오른쪽 끝에서 100% 밖으로 */
+}
+
+.item > span:not(:first-child)::after {
+  content: "/";
+  padding: 0 0.25em;
+}
