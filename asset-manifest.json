@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/focus-design/static/css/main.e113803d.css",
-    "main.js": "/focus-design/static/js/main.7c5bbdf1.js",
+    "main.css": "/focus-design/static/css/main.89251240.css",
+    "main.js": "/focus-design/static/js/main.a3bbb7ed.js",
     "static/media/right_2.jpeg": "/focus-design/static/media/right_2.6a552f4bb2ffeecb03f2.jpeg",
     "static/media/center_1.jpeg": "/focus-design/static/media/center_1.52a03be8a64cd6c30342.jpeg",
     "static/media/right_1.jpeg": "/focus-design/static/media/right_1.84584f2d09c73b3f6692.jpeg",
@@ -18,11 +18,11 @@
     "static/media/left_6.jpeg": "/focus-design/static/media/left_6.f159f16eb220e7434c90.jpeg",
     "index.html": "/focus-design/index.html",
     "static/media/logo.svg": "/focus-design/static/media/logo.72707bd1319b07b46f208496f0756e9d.svg",
-    "main.e113803d.css.map": "/focus-design/static/css/main.e113803d.css.map",
-    "main.7c5bbdf1.js.map": "/focus-design/static/js/main.7c5bbdf1.js.map"
+    "main.89251240.css.map": "/focus-design/static/css/main.89251240.css.map",
+    "main.a3bbb7ed.js.map": "/focus-design/static/js/main.a3bbb7ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.e113803d.css",
-    "static/js/main.7c5bbdf1.js"
+    "static/css/main.89251240.css",
+    "static/js/main.a3bbb7ed.js"
   ]
 }
