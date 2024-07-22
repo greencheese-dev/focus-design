@@ -11,10 +11,18 @@ const Masonry = () => {
         {projects.map((item, index) => (
           <figure className={styles.item} key={index}>
             <div className={styles.textwrapper}>
-              <span>{item.title}</span>
-              <span>{item.desc}</span>
+              <div data-hover={item.title}>
+                <span className={styles.title}>{item.title}</span>
+              </div>
+              <div data-hover={item.desc}>
+                <span className={styles.desc}>{item.desc}</span>
+              </div>
             </div>
-            <img src={item.media} alt={`${item.title}: ${item.desc}`} />
+            <img
+              className={styles.bgimg}
+              src={item.media}
+              alt={`${item.title}: ${item.desc}`}
+            />
           </figure>
         ))}
       </div>
