@@ -3,6 +3,7 @@ import styled from "styled-components";
 import * as images from "../../recoil_db";
 import { useRecoilValue } from "recoil";
 import getImageURL from "../../utils/getImageURL";
+import styles from "./HomeProjects.module.css";
 
 const HomeProjects = () => {
   const [lefts, setLefts] = useState([{}]);
@@ -15,27 +16,63 @@ const HomeProjects = () => {
 
   return (
     <Wrapper>
-      <WrapA>
+      <WrapA className={styles.wrapper}>
         {projectsLeft.map((item, index) => (
-          <Item key={index} $height={"15vw"} $media={item.media}>
-            <Title>{item.title}</Title>
-            <Addr>{item.desc}</Addr>
+          <Item
+            className={styles.item}
+            key={index}
+            $height={"15vw"}
+            $media={item.media}
+          >
+            <div className={styles.textwrapper}>
+              <div data-hover={item.title}>
+                <span className={styles.title}>{item.title}</span>
+              </div>
+              <div data-hover={item.desc}>
+                <span className={styles.desc}>{item.desc}</span>
+              </div>
+            </div>
+            <img src={item.media} alt={`${item.title}: ${item.desc}`} />
           </Item>
         ))}
       </WrapA>
-      <WrapA>
+      <WrapA className={styles.wrapper}>
         {projectsCenter.map((item, index) => (
-          <Item key={index} $height={item.height} $media={item.media}>
-            <Title>{item.title}</Title>
-            <Addr>{item.desc}</Addr>
+          <Item
+            className={styles.item}
+            key={index}
+            $height={item.height}
+            $media={item.media}
+          >
+            <div className={styles.textwrapper}>
+              <div data-hover={item.title}>
+                <span className={styles.title}>{item.title}</span>
+              </div>
+              <div data-hover={item.desc}>
+                <span className={styles.desc}>{item.desc}</span>
+              </div>
+            </div>
+            <img src={item.media} alt={`${item.title}: ${item.desc}`} />
           </Item>
         ))}
       </WrapA>
-      <WrapB>
+      <WrapB className={styles.wrapper}>
         {projectsRight.map((item, index) => (
-          <Item key={index} $height={item.height} $media={item.media}>
-            <Title>{item.title}</Title>
-            <Addr>{item.desc}</Addr>
+          <Item
+            className={styles.item}
+            key={index}
+            $height={item.height}
+            $media={item.media}
+          >
+            <div className={styles.textwrapper}>
+              <div data-hover={item.title}>
+                <span className={styles.title}>{item.title}</span>
+              </div>
+              <div data-hover={item.desc}>
+                <span className={styles.desc}>{item.desc}</span>
+              </div>
+            </div>
+            <img src={item.media} alt={`${item.title}: ${item.desc}`} />
           </Item>
         ))}
       </WrapB>
@@ -67,7 +104,6 @@ const WrapB = styled.div`
 const Item = styled.div.attrs((props) => ({
   style: {
     height: props.$height,
-    backgroundImage: `URL(${props.$media})`,
   },
 }))`
   display: flex;
@@ -82,13 +118,5 @@ const Item = styled.div.attrs((props) => ({
   border: 1px solid black;
   background-size: cover;
   background-position: center;
-`;
-
-const Title = styled.span.attrs((props) => ({}))`
-  padding: 1rem 0 0 1rem;
-  line-height: 1.2;
-`;
-const Addr = styled.span.attrs((props) => ({}))`
-  padding: 0 0 0 1rem;
 `;
 export default HomeProjects;

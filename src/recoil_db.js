@@ -106,7 +106,7 @@ const projectsRightState = atom({
       title: "TACO",
       desc: "wall painting",
       media: right_3,
-      height: "20vw",
+      height: "40vw",
     },
   ],
 });
