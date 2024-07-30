@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/focus-design/static/css/main.e3057e13.css",
-    "main.js": "/focus-design/static/js/main.f379509c.js",
+    "main.css": "/focus-design/static/css/main.2624fb7b.css",
+    "main.js": "/focus-design/static/js/main.c615c778.js",
     "static/css/711.e7bd8ee7.chunk.css": "/focus-design/static/css/711.e7bd8ee7.chunk.css",
     "static/js/711.d5570aec.chunk.js": "/focus-design/static/js/711.d5570aec.chunk.js",
-    "static/css/38.1ae7ab57.chunk.css": "/focus-design/static/css/38.1ae7ab57.chunk.css",
-    "static/js/38.6ec83055.chunk.js": "/focus-design/static/js/38.6ec83055.chunk.js",
+    "static/css/38.1ed6977c.chunk.css": "/focus-design/static/css/38.1ed6977c.chunk.css",
+    "static/js/38.0d59feba.chunk.js": "/focus-design/static/js/38.0d59feba.chunk.js",
     "static/js/998.d2222fb3.chunk.js": "/focus-design/static/js/998.d2222fb3.chunk.js",
     "static/js/939.c9b74f8e.chunk.js": "/focus-design/static/js/939.c9b74f8e.chunk.js",
     "static/media/right_2.jpeg": "/focus-design/static/media/right_2.6a552f4bb2ffeecb03f2.jpeg",
@@ -24,17 +24,17 @@
     "static/media/left_6.jpeg": "/focus-design/static/media/left_6.f159f16eb220e7434c90.jpeg",
     "index.html": "/focus-design/index.html",
     "static/media/logo.svg": "/focus-design/static/media/logo.72707bd1319b07b46f208496f0756e9d.svg",
-    "main.e3057e13.css.map": "/focus-design/static/css/main.e3057e13.css.map",
-    "main.f379509c.js.map": "/focus-design/static/js/main.f379509c.js.map",
+    "main.2624fb7b.css.map": "/focus-design/static/css/main.2624fb7b.css.map",
+    "main.c615c778.js.map": "/focus-design/static/js/main.c615c778.js.map",
     "711.e7bd8ee7.chunk.css.map": "/focus-design/static/css/711.e7bd8ee7.chunk.css.map",
     "711.d5570aec.chunk.js.map": "/focus-design/static/js/711.d5570aec.chunk.js.map",
-    "38.1ae7ab57.chunk.css.map": "/focus-design/static/css/38.1ae7ab57.chunk.css.map",
-    "38.6ec83055.chunk.js.map": "/focus-design/static/js/38.6ec83055.chunk.js.map",
+    "38.1ed6977c.chunk.css.map": "/focus-design/static/css/38.1ed6977c.chunk.css.map",
+    "38.0d59feba.chunk.js.map": "/focus-design/static/js/38.0d59feba.chunk.js.map",
     "998.d2222fb3.chunk.js.map": "/focus-design/static/js/998.d2222fb3.chunk.js.map",
     "939.c9b74f8e.chunk.js.map": "/focus-design/static/js/939.c9b74f8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3057e13.css",
-    "static/js/main.f379509c.js"
+    "static/css/main.2624fb7b.css",
+    "static/js/main.c615c778.js"
   ]
 }
