@@ -17,7 +17,7 @@ const Projects = () => {
       <h1
         className={`border-t-2 border-b border-black text-left pb-2 ${styles.header}`}
       >
-        Project
+        Projects.
       </h1>
       <Masonry />
     </div>
