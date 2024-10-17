@@ -25,8 +25,17 @@
   -webkit-backdrop-filter: blur(40px);
 }
 
+/* 타이틀에 호버됐을 때 컨텐츠에 효과 적용, 타이틀 호버 아웃 되고 컨텐트로 호버되면 컨텐트에 호버효과 적용 */
+/* 
 .nav_title:hover + .nav_contents,
 .nav_contents:hover {
+  visibility: visible;
+  height: calc(100vh - 1.2rem - 41px);
+  opacity: 1;
+} */
+
+.nav_title_hover + .nav_contents_hover,
+.nav_contents_hover {
   visibility: visible;
   height: calc(100vh - 1.2rem - 41px);
   opacity: 1;

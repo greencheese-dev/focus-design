@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import styled from "styled-components";
 import styles from "./Navigation.module.css";
 import Item from "./Navigation/Item";
@@ -9,6 +9,61 @@ import { outLinkState } from "../recoil_state";
 const Navigation = () => {
   const [projects, setProjects] = useState([{}]);
   const outLink = useRecoilValue(outLinkState);
+
+  const [isMenuHovered, setIsMenuHoverd] = useState(false);
+  const [isProjectHovered, setIsProjectHoverd] = useState(false);
+  const [isAboutHovered, setIsAboutHoverd] = useState(false);
+  const [isContectHovered, setIsContectHoverd] = useState(false);
+  const handleMouseOver = useCallback(
+    (target) => {
+      switch (target) {
+        case "menu":
+          setIsMenuHoverd(true);
+          break;
+        case "project":
+          setIsProjectHoverd(true);
+          break;
+        case "about":
+          setIsAboutHoverd(true);
+          break;
+        case "contect":
+          setIsContectHoverd(true);
+          break;
+        default:
+          console.log("error: Invalid navigation key.");
+          break;
+      }
+    },
+    [isMenuHovered, isProjectHovered, isAboutHovered, isContectHovered]
+  );
+  const handleMouseOut = useCallback(
+    (target) => {
+      switch (target) {
+        case "menu":
+          setIsMenuHoverd(false);
+          break;
+        case "project":
+          setIsProjectHoverd(false);
+          break;
+        case "about":
+          setIsAboutHoverd(false);
+          break;
+        case "contect":
+          setIsContectHoverd(false);
+          break;
+        default:
+          console.log("error: Invalid navigation key.");
+          break;
+      }
+    },
+    [isMenuHovered, isProjectHovered, isAboutHovered, isContectHovered]
+  );
+  const handleClick = useCallback(() => {
+    setIsMenuHoverd(false);
+    setIsProjectHoverd(false);
+    setIsAboutHoverd(false);
+    setIsContectHoverd(false);
+  }, [isMenuHovered, isProjectHovered, isAboutHovered, isContectHovered]);
 
   useEffect(() => {
     setProjects([
@@ -39,12 +94,27 @@ const Navigation = () => {
     <Wrapper className={styles.wrapper}>
       <NavUl className={styles.nav_ul}>
         <NavLi key={"home"} className={styles.nav_li}>
-          <NavTitle className={styles.nav_title} to={"/"}>
+          <NavTitle
+            onMouseOver={() => handleMouseOver("menu")}
+            onMouseOut={() => handleMouseOut("menu")}
+            onClick={handleClick}
+            className={`${styles.nav_title} ${
+              isMenuHovered ? styles.nav_title_hover : ""
+            }`}
+            to={"/"}
+          >
             <Link to={"/"}>
               <p>MENU</p>
             </Link>
           </NavTitle>
-          <NavContents className={styles.nav_contents}>
+          <NavContents
+            onMouseOver={() => handleMouseOver("menu")}
+            onMouseOut={() => handleMouseOut("menu")}
+            onClick={handleClick}
+            className={`${styles.nav_contents} ${
+              isMenuHovered ? styles.nav_contents_hover : ""
+            }`}
+          >
             <Item text={"HOME"} link={"/"} />
             <Item text={"PROJECT"} link={"/projects"} />
             <Item text={"ABOUT"} link={"/about"} />
@@ -56,12 +126,26 @@ const Navigation = () => {
           {/* 확장 메뉴 영역 */}
         </NavLi>
         <NavLi key={"project"} className={styles.nav_li}>
-          <NavTitle className={styles.nav_title}>
+          <NavTitle
+            onMouseOver={() => handleMouseOver("project")}
+            onMouseOut={() => handleMouseOut("project")}
+            onClick={handleClick}
+            className={`${styles.nav_title} ${
+              isProjectHovered ? styles.nav_title_hover : ""
+            }`}
+          >
             <Link to={"/projects"}>
               <p>PROJECT</p>
             </Link>
           </NavTitle>
-          <NavContents className={styles.nav_contents}>
+          <NavContents
+            onMouseOver={() => handleMouseOver("project")}
+            onMouseOut={() => handleMouseOut("project")}
+            onClick={handleClick}
+            className={`${styles.nav_contents} ${
+              isProjectHovered ? styles.nav_contents_hover : ""
+            }`}
+          >
             {projects.map((project, index) => (
               <Item
                 key={index}
@@ -72,15 +156,45 @@ const Navigation = () => {
           </NavContents>
           {/* 확장 메뉴 영역 */}
         </NavLi>
-        <NavLi key={"about"} className={styles.nav_li}>
-          <NavTitle className={styles.nav_title}>
+        <NavLi
+          key={"about"}
+          onMouseOver={() => handleMouseOver("about")}
+          onMouseOut={() => handleMouseOut("about")}
+          onClick={handleClick}
+          className={`${styles.nav_li} ${
+            isAboutHovered ? styled.nav_title_hover : ""
+          }`}
+        >
+          <NavTitle
+            onMouseOver={() => handleMouseOver("about")}
+            onMouseOut={() => handleMouseOut("about")}
+            onClick={handleClick}
+            className={`${styles.nav_contents} ${
+              isAboutHovered ? styled.nav_contents_hover : ""
+            }`}
+          >
             <Link to={"/about"}>
               <p>ABOUT</p>
             </Link>
           </NavTitle>
         </NavLi>
-        <NavLi key={"contect"} className={styles.nav_li}>
-          <NavTitle className={styles.nav_title}>
+        <NavLi
+          key={"contect"}
+          onMouseOver={() => handleMouseOver("contect")}
+          onMouseOut={() => handleMouseOut("contect")}
+          onClick={handleClick}
+          className={`${styles.nav_li} ${
+            isContectHovered ? styled.nav_title_hover : ""
+          }`}
+        >
+          <NavTitle
+            onMouseOver={() => handleMouseOver("contect")}
+            onMouseOut={() => handleMouseOut("contect")}
+            onClick={handleClick}
+            className={`${styles.nav_contents} ${
+              isContectHovered ? styled.nav_contents_hover : ""
+            }`}
+          >
             <Link to={"/contect"}>
               <p>CONTECT</p>
             </Link>

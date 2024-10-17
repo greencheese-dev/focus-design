@@ -54,14 +54,3 @@
 .center {
   margin: auto;
 }
-
-.App-logo {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  width: 15vh;
-  height: 15vh;
-  z-index: 1000;
-  pointer-events: none;
-  mix-blend-mode: difference;
-}
