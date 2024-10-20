@@ -14,8 +14,8 @@ const outLinkState = atom({
   key: "outLink",
   default: {
     naver: "https://blog.naver.com/casebycase_?tab=1",
-    youtube: "https://www.youtube.com",
     instagram: "https://www.instagram.com/focus_design_/",
+    kakaobiz: "https://www.kakaocorp.com/page/",
   },
 });
 

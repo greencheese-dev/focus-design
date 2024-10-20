@@ -1,15 +1,18 @@
 import styled, { keyframes } from "styled-components";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 const Email = ({ text }) => {
   const elRef = useRef(null);
   const [width, setWidth] = useState(100);
 
-  useEffect(() => {
-    if (elRef.current) {
-      setWidth(elRef.current.offsetWidth);
-    }
-  }, [elRef.current]);
+  if (elRef.current) {
+    setWidth(elRef.current.offsetWidth);
+  }
+  // useEffect(() => {
+  //   if (elRef.current) {
+  //     setWidth(elRef.current.offsetWidth);
+  //   }
+  // }, [elRef.current]);
   //   console.log(width);
 
   return (

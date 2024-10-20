@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: hidden;
+}
+
+.header {
+  margin-top: 3.8rem;
+  padding-left: 2rem;
+  font-size: 2rem;
+  line-height: 1;
+}

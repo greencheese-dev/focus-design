@@ -1,0 +1,123 @@
+.container {
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 2rem;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  transition: border-bottom 0.6s;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+  text-align: center;
+  color: #000000;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.label {
+  flex-grow: 1;
+  display: block;
+  margin-top: 1rem;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.input {
+  width: 70%;
+  padding: 1rem 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: #ffffff;
+  color: #000000;
+  border-bottom: 2px solid #00000000;
+  transition: all 0.3s ease;
+}
+.input:hover,
+.textarea:hover {
+  border-bottom-color: #000000;
+}
+.input:focus,
+.textarea:focus {
+  padding: 0.6rem 0;
+  margin: 0.4rem 0;
+  border-bottom-color: #000000;
+}
+
+.textarea {
+  width: 70%;
+  height: 300px;
+  padding: 1rem 0;
+  margin: 0 !important;
+  outline: none;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #000000;
+  resize: vertical;
+  border-bottom: 2px solid #00000000;
+  transition: all 0.3s ease;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #333333;
+}
+
+.message {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 2px solid #000000;
+}
+
+.success {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.error {
+  background-color: #000000;
+  color: #ffffff;
+}

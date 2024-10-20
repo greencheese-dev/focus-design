@@ -22,7 +22,7 @@ import Footer from "./components/Home/Footer";
 const Project = lazy(() => import("./routes/Project"));
 const Projects = lazy(() => import("./routes/Projects"));
 const About = lazy(() => import("./routes/About"));
-const Contect = lazy(() => import("./routes/Contect"));
+const Contact = lazy(() => import("./routes/Contact"));
 
 let scrollY = 0;
 let delayedScrollY = 0;
@@ -45,15 +45,17 @@ const App = () => {
     }
   };
   // useEffect 등록을 위함
-  const onScroll = () => {
-    scrollY = window.scrollY;
-    setScrollY(scrollY);
-  };
+  // const onScroll = () => {
+  //   scrollY = window.scrollY;
+  //   setScrollY(scrollY);
+  // };
 
   // 부드러운 스크롤을 위한 감속기능(delayScrollY)
   useEffect(() => {
     const handleScroll = () => {
-      onScroll();
+      // onScroll();
+      scrollY = window.scrollY;
+      setScrollY(scrollY);
       if (!rafState) {
         rafId = requestAnimationFrame(loop);
         rafState = true;
@@ -91,8 +93,8 @@ const App = () => {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/contect">
-              <Contect />
+            <Route path="/contact">
+              <Contact />
             </Route>
             <Route path="/">
               <Home />

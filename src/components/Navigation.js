@@ -14,56 +14,50 @@ const Navigation = () => {
   const [isProjectHovered, setIsProjectHoverd] = useState(false);
   const [isAboutHovered, setIsAboutHoverd] = useState(false);
   const [isContectHovered, setIsContectHoverd] = useState(false);
-  const handleMouseOver = useCallback(
-    (target) => {
-      switch (target) {
-        case "menu":
-          setIsMenuHoverd(true);
-          break;
-        case "project":
-          setIsProjectHoverd(true);
-          break;
-        case "about":
-          setIsAboutHoverd(true);
-          break;
-        case "contect":
-          setIsContectHoverd(true);
-          break;
-        default:
-          console.log("error: Invalid navigation key.");
-          break;
-      }
-    },
-    [isMenuHovered, isProjectHovered, isAboutHovered, isContectHovered]
-  );
-  const handleMouseOut = useCallback(
-    (target) => {
-      switch (target) {
-        case "menu":
-          setIsMenuHoverd(false);
-          break;
-        case "project":
-          setIsProjectHoverd(false);
-          break;
-        case "about":
-          setIsAboutHoverd(false);
-          break;
-        case "contect":
-          setIsContectHoverd(false);
-          break;
-        default:
-          console.log("error: Invalid navigation key.");
-          break;
-      }
-    },
-    [isMenuHovered, isProjectHovered, isAboutHovered, isContectHovered]
-  );
+  const handleMouseOver = useCallback((target) => {
+    switch (target) {
+      case "menu":
+        setIsMenuHoverd(true);
+        break;
+      case "project":
+        setIsProjectHoverd(true);
+        break;
+      case "about":
+        setIsAboutHoverd(true);
+        break;
+      case "contact":
+        setIsContectHoverd(true);
+        break;
+      default:
+        console.log("error: Invalid navigation key.");
+        break;
+    }
+  }, []);
+  const handleMouseOut = useCallback((target) => {
+    switch (target) {
+      case "menu":
+        setIsMenuHoverd(false);
+        break;
+      case "project":
+        setIsProjectHoverd(false);
+        break;
+      case "about":
+        setIsAboutHoverd(false);
+        break;
+      case "contact":
+        setIsContectHoverd(false);
+        break;
+      default:
+        console.log("error: Invalid navigation key.");
+        break;
+    }
+  }, []);
   const handleClick = useCallback(() => {
     setIsMenuHoverd(false);
     setIsProjectHoverd(false);
     setIsAboutHoverd(false);
     setIsContectHoverd(false);
-  }, [isMenuHovered, isProjectHovered, isAboutHovered, isContectHovered]);
+  }, []);
 
   useEffect(() => {
     setProjects([
@@ -120,8 +114,8 @@ const Navigation = () => {
             <Item text={"ABOUT"} link={"/about"} />
             <Item text={"CONTECT"} link={"/contect"} />
             <Item text={"NAVER BLOG↗"} link={outLink.naver} state={false} />
-            <Item text={"YOUTUBE↗"} link={outLink.youtube} state={false} />
             <Item text={"INSTAGRAM↗"} link={outLink.instagram} state={false} />
+            <Item text={"KAKAO Biz↗"} link={outLink.kakaobiz} state={false} />
           </NavContents>
           {/* 확장 메뉴 영역 */}
         </NavLi>
@@ -180,23 +174,23 @@ const Navigation = () => {
         </NavLi>
         <NavLi
           key={"contect"}
-          onMouseOver={() => handleMouseOver("contect")}
-          onMouseOut={() => handleMouseOut("contect")}
+          onMouseOver={() => handleMouseOver("contact")}
+          onMouseOut={() => handleMouseOut("contact")}
           onClick={handleClick}
           className={`${styles.nav_li} ${
             isContectHovered ? styled.nav_title_hover : ""
           }`}
         >
           <NavTitle
-            onMouseOver={() => handleMouseOver("contect")}
-            onMouseOut={() => handleMouseOut("contect")}
+            onMouseOver={() => handleMouseOver("contact")}
+            onMouseOut={() => handleMouseOut("contact")}
             onClick={handleClick}
             className={`${styles.nav_contents} ${
               isContectHovered ? styled.nav_contents_hover : ""
             }`}
           >
-            <Link to={"/contect"}>
-              <p>CONTECT</p>
+            <Link to={"/contact"}>
+              <p>CONTACT</p>
             </Link>
           </NavTitle>
         </NavLi>

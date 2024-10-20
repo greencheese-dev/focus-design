@@ -1,30 +1,34 @@
 import styled from "styled-components";
-import text_naver from "../../assets/test_naver.svg";
+import text_naver from "../../assets/text_naver.svg";
 import text_instagram from "../../assets/text_instagram.svg";
-import text_youtube from "../../assets/test_youtube.svg";
+import text_kakaobiz from "../../assets/text_kakaobiz.png";
 import { useState } from "react";
+import { useRecoilValue } from "recoil";
+import { outLinkState } from "../../recoil_state";
 
 const Footer = () => {
+  const outLink = useRecoilValue(outLinkState);
+
   const [naver, setNaver] = useState(true);
   const [instagram, setInstagram] = useState(true);
-  const [youtube, setYoutube] = useState(true);
+  const [kakaobiz, setKakaobiz] = useState(true);
 
   const onHover = (el) => {
     switch (el.target.id) {
       case "naver":
         setNaver(true);
         setInstagram(false);
-        setYoutube(false);
+        setKakaobiz(false);
         break;
       case "instagram":
         setNaver(false);
         setInstagram(true);
-        setYoutube(false);
+        setKakaobiz(false);
         break;
-      case "youtube":
+      case "kakaobiz":
         setNaver(false);
         setInstagram(false);
-        setYoutube(true);
+        setKakaobiz(true);
         break;
     }
   };
@@ -32,19 +36,19 @@ const Footer = () => {
   const outHover = () => {
     setNaver(true);
     setInstagram(true);
-    setYoutube(true);
+    setKakaobiz(true);
   };
 
   const goToSite = (el) => {
     switch (el.target.id) {
       case "naver":
-        window.location.href = "https://www.naver.com";
+        window.location.href = outLink.naver;
         break;
       case "instagram":
-        window.location.href = "https://www.instagram.com";
+        window.location.href = outLink.instagram;
         break;
-      case "youtube":
-        window.location.href = "https://www.youtube.com";
+      case "kakaobiz":
+        window.location.href = outLink.kakaobiz;
         break;
     }
   };
@@ -52,9 +56,9 @@ const Footer = () => {
   return (
     <Wrapper>
       <LinkContainer>
-        {/* <Link href={"https://www.naver.com"}>NAVER BLOG↗</Link>
-        <Link href={"https://www.youtube.com"}>YOUTUBE↗</Link>
-        <Link href={"https://www.instagram.com"}>INSTAGRAM↗</Link> */}
+        {/* <Link href={"https://www.naver.com"}>Naver Blog↗</Link>
+        <Link href={"https://www.youtube.com"}>Instagram↗</Link>
+        <Link href={"https://www.instagram.com"}>Kakao Biz↗↗</Link> */}
         <div
           id="naver"
           onClick={goToSite}
@@ -72,12 +76,17 @@ const Footer = () => {
           <LinkImg src={text_instagram} alt="text naver" $state={instagram} />
         </div>
         <div
-          id="youtube"
+          id="kakaobiz"
           onClick={goToSite}
           onMouseEnter={onHover}
           onMouseOut={outHover}
         >
-          <LinkImg src={text_youtube} alt="text naver" $state={youtube} />
+          <LinkImg
+            src={text_kakaobiz}
+            alt="text naver"
+            $state={kakaobiz}
+            style={{ marginLeft: "-4x" }}
+          />
         </div>
       </LinkContainer>
     </Wrapper>
@@ -99,7 +108,7 @@ const LinkContainer = styled.div`
 
 const Link = styled.a`
   text-align: left;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
