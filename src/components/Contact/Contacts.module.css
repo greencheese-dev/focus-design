@@ -110,6 +110,7 @@
   text-align: center;
   font-size: 1.2rem;
   border: 2px solid #000000;
+  transition: all 0.6s ease;
 }
 
 .success {
@@ -120,4 +121,10 @@
 .error {
   background-color: #000000;
   color: #ffffff;
+}
+
+.none {
+  color: #00000000;
+  background-color: #00000000;
+  border: 2px solid #00000000;
 }

@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkfocus_design=self.webpackChunkfocus_design||[]).push([[939],{939:(s,e,c)=>{c.r(e),c.d(e,{default:()=>u});var n=c(579);const u=()=>(0,n.jsx)("h1",{children:"Contect"})}}]);
-//# sourceMappingURL=939.c9b74f8e.chunk.js.map
